@@ -1,10 +1,10 @@
 import axios from 'axios';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5000/api',
+  baseURL: 'https://queue-management-application-92ka.onrender.com/api',
 });
 
-// Attach the JWT to every request once the user is logged in
+
 api.interceptors.request.use((config) => {
   const token = localStorage.getItem('queue_app_token');
   if (token) {
@@ -13,7 +13,7 @@ api.interceptors.request.use((config) => {
   return config;
 });
 
-// If the token has expired or is invalid, bounce back to login
+
 api.interceptors.response.use(
   (response) => response,
   (error) => {
