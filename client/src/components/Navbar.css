@@ -1,0 +1,49 @@
+.navbar {
+  background: var(--ink-900);
+  color: #fff;
+}
+
+.navbar__inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.navbar__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.navbar__brand-mark {
+  font-family: var(--font-mono);
+  color: var(--amber-500);
+}
+
+.navbar__right {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.navbar__user {
+  font-size: 0.85rem;
+  color: var(--steel-200);
+}
+
+.navbar .btn--ghost {
+  border-color: var(--ink-500);
+  color: #fff;
+}
+
+.navbar .btn--ghost:hover {
+  border-color: var(--steel-200);
+  background: var(--ink-700);
+}

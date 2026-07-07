@@ -1,0 +1,44 @@
+:root {
+  /* Color — operations-counter palette, not a template default */
+  --ink-900: #1c2127;
+  --ink-700: #343b45;
+  --ink-500: #4a5568;
+  --ink-300: #8891a0;
+
+  --steel-50: #eceef0;
+  --steel-100: #dde1e5;
+  --steel-200: #c7ccd2;
+
+  --amber-500: #e8a33d;
+  --amber-600: #c98625;
+  --amber-tint: #fbf0dd;
+
+  --teal-600: #1f6f64;
+  --teal-tint: #dcece9;
+
+  --rust-500: #c1443c;
+  --rust-tint: #f6dedc;
+
+  --paper: #f6f5f2;
+  --paper-shadow: rgba(28, 33, 39, 0.08);
+
+  /* Type */
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing scale */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+
+  --radius-sm: 4px;
+  --radius-md: 8px;
+
+  --shadow-card: 0 1px 2px rgba(28, 33, 39, 0.06), 0 4px 12px rgba(28, 33, 39, 0.06);
+}

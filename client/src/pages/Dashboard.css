@@ -1,0 +1,80 @@
+.dashboard {
+  padding: var(--space-6) var(--space-5) var(--space-8);
+}
+
+.dashboard__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: var(--space-5);
+  gap: var(--space-4);
+}
+
+.dashboard__header h1 {
+  font-size: 1.6rem;
+}
+
+.dashboard__subtitle {
+  color: var(--ink-500);
+  margin: 4px 0 0;
+  font-size: 0.9rem;
+}
+
+.dashboard__new-form {
+  display: flex;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.dashboard__new-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--steel-200);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+}
+
+.dashboard__loading {
+  color: var(--ink-500);
+}
+
+.dashboard__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: var(--space-4);
+}
+
+.queue-card {
+  background: #fff;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-card);
+  padding: var(--space-5);
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  border-top: 3px solid var(--amber-500);
+}
+
+.queue-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(28, 33, 39, 0.12);
+}
+
+.queue-card__ticket-mark {
+  font-family: var(--font-mono);
+  color: var(--ink-300);
+  font-size: 1.2rem;
+  margin-bottom: var(--space-2);
+}
+
+.queue-card__name {
+  font-size: 1.1rem;
+  margin-bottom: var(--space-2);
+}
+
+.queue-card__meta {
+  font-size: 0.78rem;
+  color: var(--ink-500);
+  font-family: var(--font-mono);
+}

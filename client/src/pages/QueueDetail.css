@@ -1,0 +1,105 @@
+.queue-detail {
+  padding: var(--space-5) var(--space-5) var(--space-8);
+}
+
+.queue-detail__back {
+  color: var(--ink-500);
+  text-decoration: none;
+  font-size: 0.85rem;
+  display: inline-block;
+  margin-bottom: var(--space-4);
+}
+
+.queue-detail__back:hover {
+  color: var(--ink-900);
+}
+
+.queue-detail__header {
+  margin-bottom: var(--space-5);
+}
+
+.queue-detail__header h1 {
+  font-size: 1.6rem;
+}
+
+/* Now-serving board — the departure-board style focal point */
+.serving-board {
+  background: var(--ink-900);
+  border-radius: var(--radius-md);
+  padding: var(--space-6);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-5);
+  margin-bottom: var(--space-5);
+  flex-wrap: wrap;
+}
+
+.serving-board__display {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.serving-board__label {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--steel-200);
+  font-weight: 600;
+}
+
+.serving-board__number {
+  font-family: var(--font-mono);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--amber-500);
+  line-height: 1.1;
+}
+
+.serving-board__name {
+  color: var(--steel-200);
+  font-size: 0.95rem;
+}
+
+.serving-board__cta {
+  min-width: 200px;
+}
+
+.queue-detail__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+}
+
+.add-ticket-form {
+  display: flex;
+  gap: var(--space-3);
+  margin: var(--space-5) 0 var(--space-4);
+}
+
+.add-ticket-form input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--steel-200);
+  border-radius: var(--radius-sm);
+  font-size: 0.95rem;
+  background: #fff;
+}
+
+.ticket-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+@media (max-width: 640px) {
+  .serving-board {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .serving-board__cta {
+    width: 100%;
+  }
+}
