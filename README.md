@@ -1,4 +1,4 @@
-# 🚀 Queue Management Application
+#  Queue Management Application
 
 A full-stack Queue Management System built with the MERN/Vite stack to handle real-time token generation, queue tracking, and counter management efficiently.
 
